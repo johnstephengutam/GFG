@@ -1,0 +1,10 @@
+package com.starwar;
+
+public class Star {
+	int shape;
+	int lighting;
+	
+	void rocket(){
+		System.out.println("Will go by Rocket");
+	}
+}

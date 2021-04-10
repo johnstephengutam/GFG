@@ -1,0 +1,22 @@
+package com.starwar;
+
+public class Star {
+	int shape;
+	int lighting;
+	
+	void rocket(){
+		System.out.println("Will go by Rocket");
+	}
+}
+
+
+class StarUsage{
+	public static void main(String[] args){
+		Star str1 = new Star();
+		str.rocket();
+		Star str2 = new Star();
+		str.rocket();
+		Star str3 = new Star();
+		str.rocket();
+	}
+}

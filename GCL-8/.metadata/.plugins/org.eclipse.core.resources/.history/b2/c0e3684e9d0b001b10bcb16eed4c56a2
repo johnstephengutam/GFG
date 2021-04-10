@@ -1,0 +1,26 @@
+package com.day7;
+
+import java.util.Stack;
+
+public class InfixToPostfix {
+	static Stack st = new Stack();
+	public static void postfix(String str){
+		int n = str.length();
+		int i = 0;
+		while(i < n){
+			if(str.charAt(i) == 'a' ||str.charAt(i) == 'b'||str.charAt(i) == 'c'||str.charAt(i) == 'd'){
+				System.out.print(str.charAt(i));
+			}
+			else
+				st.add(str.charAt(i));
+			
+		}
+		while(!st.isEmpty())
+			System.out.println(st.pop());
+	}
+	public static void main(String[] args) {
+		String str = "(a+(b*c)+d)";
+		postfix(str);
+	}
+
+}

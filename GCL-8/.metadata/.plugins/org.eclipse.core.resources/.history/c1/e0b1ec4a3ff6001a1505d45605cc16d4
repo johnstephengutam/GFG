@@ -1,0 +1,13 @@
+package com.day1;
+
+public class TrappingRainWater_2 {
+
+	public static void trapedWater(int[] arr, int n){
+		
+	}
+	public static void main(String[] args) {
+		int arr[] = {3,0,2,0,4};
+		trappedWater(arr, arr.length);
+	}
+
+}

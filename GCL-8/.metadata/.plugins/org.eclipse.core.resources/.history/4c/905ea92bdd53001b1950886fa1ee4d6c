@@ -1,0 +1,12 @@
+package com.job;
+
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class ConcurrentDemo {
+	CopyOnWriteArrayList l = new CopyOnWriteArrayList();
+	public static void main(String[] args){
+		l.add('A');
+		l.add('B');
+		
+	}
+}

@@ -1,0 +1,10 @@
+package com.day4;
+
+public class FindIthBit {
+
+	public static void main(String[] args) {
+		int num = 1234;
+		System.out.println(num << 1);
+	}
+
+}

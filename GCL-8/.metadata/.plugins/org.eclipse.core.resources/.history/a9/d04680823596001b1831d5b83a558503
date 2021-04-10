@@ -1,0 +1,31 @@
+package com.starwar;
+
+public  class Star {
+	int shape;
+	int lighting;
+	static int all = 10;
+	final int MAX = 100;
+	
+	Star(int val){
+		shape = 10;
+	}
+	
+	void rocket(){
+		System.out.println("Will go by Rocket");
+	}
+}
+
+
+class StarUsage{
+	public static void main(String[] args){
+		Star str1 = new Star(10);
+		str1.rocket();
+		Star str2 = new Star(20);
+		str2.rocket();
+		Star str3 = new Star(30);
+		str3.rocket();
+		
+		System.out.println(Star.all++);
+		System.out.println(MAX++);
+	}
+}

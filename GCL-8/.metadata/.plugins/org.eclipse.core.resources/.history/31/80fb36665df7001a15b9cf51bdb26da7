@@ -1,0 +1,11 @@
+package com.day2;
+
+public class SquareRootOfX {
+
+	public static void main(String[] args) {
+		int x = 5;
+		int index = squareRoot( x);
+
+	}
+
+}

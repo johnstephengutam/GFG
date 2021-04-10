@@ -1,0 +1,14 @@
+package com.day3;
+
+public class CheckIfS2isSubsequenceOfS1 {
+	public static boolean subSequence(String str1, String str2){
+		return false;
+	}
+	public static void main(String[] args) {
+		String s1 = "dhoni";
+		String s2 = "doi";
+		
+		System.out.println(subSequence(str1,str2));
+	}
+
+}

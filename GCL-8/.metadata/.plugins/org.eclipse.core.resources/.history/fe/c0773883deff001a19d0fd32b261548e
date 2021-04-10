@@ -1,0 +1,9 @@
+package com.day4;
+
+public class GivenNumPowOf2Ornot {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

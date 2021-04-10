@@ -1,0 +1,6 @@
+package com.chess;
+
+public class King extends Piece{
+	boolean castlingDone = false;
+	
+}

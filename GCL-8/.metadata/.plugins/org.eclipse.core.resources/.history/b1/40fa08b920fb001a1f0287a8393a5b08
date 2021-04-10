@@ -1,0 +1,44 @@
+package com.day3;
+
+//Similar to Sliding window concept
+public class SmallestSUBSTROfS1ContainsS2 {
+	public static int smallestSubStringOfS1(String str1, String str2){
+		int ans = 0;
+		int[] freq1 = new int[26];
+		int[] freq2 = new int[26];
+		int l1 = 0, r1 = str1.length(),l2 = 0,r2=str2.length();
+		if(r1 != r2)
+			return false;
+		while(l1 < r1 && l2 < r2){
+			freq1[str1.charAt(l1) - 'a']++;
+			l1++;
+			freq2[str2.charAt(l2) - 'a']++;
+			l2++;
+		}
+		//compare the patter with s1 and count
+		for(i=0; i < str2.length(); i++){
+			for(j=0; j <  str1.length(); j++){
+				if(str2.charAt(i) == str1.charAt(j)){
+					ans++;
+					break;
+				}
+			}
+			if(ans == str2.length())
+				windr = j;
+		}
+		
+		System.out.println(windl+" "+windr);
+		
+		/*if(ans == str2.length()){
+			System.out.println(i+" "+j);
+		}*/
+		return ans;
+	}
+
+	public static void main(String[] args) {
+		String str1 = "geeksforgeeks";
+		String str2 = "esg";
+		System.out.println(smallestSubStringOfS1(str1,str2));
+	}
+
+}

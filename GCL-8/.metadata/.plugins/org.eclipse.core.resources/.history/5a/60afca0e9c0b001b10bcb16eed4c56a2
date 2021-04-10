@@ -1,0 +1,12 @@
+package com.day7;
+
+public class InfixToPostfix {
+	public static void postfix(String str){
+		
+	}
+	public static void main(String[] args) {
+		String str = "(a+(b*d)+d)";
+		postfix(str);
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.job;
+
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class ConcurrentDemo extends Thread{
+	static CopyOnWriteArrayList l = new CopyOnWriteArrayList();
+	
+	public void run(){
+		l.add('D');
+	}
+	
+	/*public static void main(String[] args) throws InterruptedException{
+		l.add('A');
+		l.add('B');
+		l.add('c');
+		
+		ConcurrentDemo t = new ConcurrentDemo();
+		t.run();
+		
+		Thread.sleep(1000);
+		
+		Iterator itr = l.iterator();
+		
+		while(itr.hasNext()){
+			String s= (String)itr.next();
+			System.out.println(s);
+			Thread.sleep(1000);
+		}
+		System.out.println(l);
+	}*/
+	
+	public static void main(String[] args){
+		CopyOnWriteArrayList list = new CopyOnWriteArrayList();
+		Iterator itr = list.iterator();
+		list.add("Gfg");
+		
+		
+		while(itr.hasNext()){
+			System.out.println(itr.next());
+		}
+	}
+	
+	
+}

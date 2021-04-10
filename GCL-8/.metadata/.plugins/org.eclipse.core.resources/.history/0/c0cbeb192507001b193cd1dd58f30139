@@ -1,0 +1,30 @@
+package com.day6;
+
+import java.util.Stack;
+
+public class QueueOperations {
+	static Stack<Integer> s1 = new Stack<Integer>();
+	static Stack<Integer> s2 = new Stack<Integer>();
+	
+	public static void add(int x){
+		s1.add(x);
+	}
+	public static int poll(){
+		while(){
+			s2.add(s1.pop());
+		}
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		int arr[] = {1,2,3,4};
+		
+		for(int i = 0; i < arr.length; i++){
+			add(arr[i]);
+		}
+		
+		for(int i = 0; i < 4; i++)
+			System.out.println(poll());
+	}
+
+}

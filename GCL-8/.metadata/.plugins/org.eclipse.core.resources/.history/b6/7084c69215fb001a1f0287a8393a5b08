@@ -1,0 +1,13 @@
+package com.day3;
+
+//Similar to Sliding window concept
+public class SmallestSUBSTROfS1ContainsS2 {
+
+	public static void main(String[] args) {
+		String str1 = "geeksforgeeks";
+		String str2 = "esg";
+		
+		
+	}
+
+}

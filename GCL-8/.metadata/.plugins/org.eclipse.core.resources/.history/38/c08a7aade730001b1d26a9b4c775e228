@@ -1,0 +1,27 @@
+package Contest2;
+
+import java.util.HashSet;
+
+
+
+
+public class XOR
+{
+    public static boolean pairExists(int arr[], int n, int c)
+    {
+    	for(int i = 0; i < n; i++){
+            for(int j = i+1; j < n; j++){
+                int xor = arr[i] ^ arr[j];
+                 if(xor == c){
+                     return true;
+                 }
+            }
+        }
+        return false;
+    }
+    
+    public static void main(String[] args){
+    	int arr[]= {2,1,10,3,4,9,5};
+    	System.out.println(pairExists(arr,7,7));
+    }
+}

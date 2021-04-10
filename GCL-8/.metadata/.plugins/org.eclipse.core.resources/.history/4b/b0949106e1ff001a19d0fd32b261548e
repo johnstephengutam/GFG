@@ -1,0 +1,12 @@
+package com.day4;
+
+public class Recursion {
+	public static printNto1(int N){
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

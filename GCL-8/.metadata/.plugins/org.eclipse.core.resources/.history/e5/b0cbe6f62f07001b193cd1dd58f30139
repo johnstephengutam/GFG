@@ -1,0 +1,79 @@
+package com.day6;
+
+import java.util.Stack;
+
+public class QueueOperations {
+	static Stack<Integer> s1 = new Stack<Integer>();
+	static Stack<Integer> s2 = new Stack<Integer>();
+	
+	/*public static void add2(int x){ //O(1)
+		s1.add(x);
+	}
+	public static int poll2(){ //O(N)
+		int N = s1.size();
+		while(!s1.isEmpty()){
+			s2.add(s1.pop());
+		}
+		int ret = s2.pop();
+		return ret;
+	}
+	
+	public static void main(String[] args) {
+		int arr[] = {1,2,3,4};
+		
+		for(int i = 0; i < arr.length; i++){
+			add2(arr[i]);
+		}
+		
+		for(int i = 0; i < 4; i++)
+			System.out.println(poll2());
+	}*/
+	
+	/*static int poll2(){ //O(1)
+		return s1.pop();
+	}
+	static void add2(int x){ //O(N)
+		while(!s1.isEmpty()){
+			s2.add(s1.pop());
+		}
+		s1.add(x);
+		while(!s2.isEmpty()){
+			s1.add(s2.pop());
+		}
+		
+	}*/
+	
+	public static void add2(int x){ //O(1)
+		s1.add(x);
+	}
+	
+	public static void poll2(){
+		int ret = solve(s1);
+		return ret;
+	}
+	
+	public static int solve(Stack s3){
+		if(s1.isEmpty()){
+			System.out.println("Nothing to display");
+		}
+		if(s1.size() == 1){
+			System.out.println(s1.pop());
+			return;
+		}
+		solve(s1);
+		return s1.pop();
+	}
+	
+	public static void main(String[] args){
+		int arr[] = {1,2,3,4};
+		
+		for(int i = 0; i < arr.length; i++){
+			add2(arr[i]);
+		}
+		
+		for(int i = 0; i < 4; i++)
+			System.out.println(poll2());
+
+	}
+
+}

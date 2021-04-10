@@ -1,0 +1,28 @@
+package com.day3;
+
+public class CheckIfS2isSubsequenceOfS1 {
+	public static boolean subSequence_bruteforce(String str1, String str2){
+		int[] freq1 = new int[26];
+		int[] freq2 = new int[26];
+		int l1 = 0, r1 = str1.length(),l2 = 0,r2=str2.length();
+		if(r1 != r2)
+			return false;
+		while(l1 < r1 && l2 < r2){
+			freq1[str1.charAt(l1) - 'a']++;
+			l1++;
+			freq2[str2.charAt(l2) - 'a']++;
+			l2++;
+		}
+		
+		
+		
+		return false;
+	}
+	public static void main(String[] args) {
+		String str1 = "dhoni";
+		String str2 = "doi";
+		
+		System.out.println(subSequence_bruteforce(str1,str2));
+	}
+
+}

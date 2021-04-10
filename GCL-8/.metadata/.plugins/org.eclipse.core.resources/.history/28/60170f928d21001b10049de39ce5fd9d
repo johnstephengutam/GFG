@@ -1,0 +1,37 @@
+package com.arrays;
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class SubArraySum
+ {
+	public static void main (String[] args)
+	 {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for(int i = 0; i < T; i++){
+            int N = sc.nextInt();
+            int sum = sc.nextInt();
+            int arr[] = new int[N];
+            for(int j = 0; j < N; j++){
+                arr[j] = sc.nextInt();
+            }
+            subarraySum(arr, N, sum);
+        }
+	 }
+	 public static void subarraySum(int[] arr, int N, int sum){
+	     int left = 0;
+	     int right = 0;
+	     int currSum = 0;
+	     while(left <= right){
+	         currSum = arr[left]+arr[right];
+	         if(sum == currSum)
+	            System.out.println(left+"" +right);
+	         else if(sum > currSum)
+	            right++;
+	         else 
+	            left++;
+	            
+	     }
+	 }
+}

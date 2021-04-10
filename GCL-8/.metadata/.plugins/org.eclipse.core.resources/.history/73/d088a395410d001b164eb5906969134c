@@ -1,0 +1,16 @@
+package com.day6;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class DequeueOperations {
+	Deque dq = new ArrayDeque();
+	public static void (){
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

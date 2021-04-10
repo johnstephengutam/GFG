@@ -1,0 +1,12 @@
+package com.day4;
+
+public class GivenNumPowOf2Ornot {
+	public static boolean powOf2OrNot(int num){
+		return false;
+	}
+	public static void main(String[] args) {
+		int num = 8;
+		System.out.println(powOf2OrNot(num));
+	}
+
+}

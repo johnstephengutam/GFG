@@ -1,0 +1,29 @@
+package com.day4;
+
+public class Recursion {
+	public static void printNto1(int N){
+		if(N < 1)
+			return;
+		System.out.print(N+" ");
+		printNto1(N-1);
+	}
+	public static void print1toN(int N){
+		if(N < 1)
+			return;
+		print1toN(N-1);
+		System.out.print(N+" ");
+	}
+	public static void main(String[] args) {
+		/*printNto1(5);
+		System.out.println();
+		print1toN(5);*/
+		System.out.println(fact(5));
+		
+	}
+	public static int fact(int N){
+		if(N == 0)
+			return 1;
+		return N *	fact(N-1);
+	}
+
+}

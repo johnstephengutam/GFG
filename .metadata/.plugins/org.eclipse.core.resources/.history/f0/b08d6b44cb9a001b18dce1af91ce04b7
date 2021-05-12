@@ -1,0 +1,6 @@
+spring.application.name = demoservice
+server.port = 9080
+
+debug = true
+
+logging.file = F:/bootlog/mylog.log

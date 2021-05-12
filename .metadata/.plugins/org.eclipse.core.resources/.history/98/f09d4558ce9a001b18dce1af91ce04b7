@@ -1,0 +1,12 @@
+package com.tutorialspoint.demo.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProductServiceController {
+	private static Map<String, Product> productRepo = new HashMap<>();
+	
+	static{
+		
+	}
+}

@@ -1,0 +1,6 @@
+package com.example.accessingdatamysql;
+
+@Controller
+public class MainController {
+
+}

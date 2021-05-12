@@ -1,0 +1,6 @@
+package com.tutorialspoint.demo.controller;
+
+@RestController
+public class ProductServiceController {
+
+}

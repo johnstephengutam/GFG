@@ -1,0 +1,7 @@
+spring.application.name = demoservice
+server.port = 9080
+
+debug = true
+
+logging.file.name = F:/bootlog/mylog.log
+logging.level.root = WARN

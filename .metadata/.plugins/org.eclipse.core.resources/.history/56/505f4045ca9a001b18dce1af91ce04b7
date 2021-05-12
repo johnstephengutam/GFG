@@ -1,0 +1,4 @@
+spring.application.name = demoservice
+server.port = 8080
+
+debug = true
